@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct 19 09:38:44 2016
+
+@author: albrightke
+"""
+
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
