@@ -8,19 +8,16 @@
             <h1><a href="">Ken's Blog</a></h1>
         </div>
 
-        <div>
-            <p> published: today</p>
-            <h2><a href="">My first post</a></h2>
-            <p>tlkejrl; skjt lksd 
-                lk sdfk;l </p>
-        </div>
+        {% for post in posts %}
 
-        <div>
-            <p>published: sldkfjs df</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Hi there!</p>
-            <p>It works!</p>
-        </div>
+            <div>
+                <p>published: {{post.published_date}}</p>
+                <h1><a href="">{{post.title}}</a></h1>
+                <p>{{post.text|linebreaksbr}}</p>
+                
+            </div>
+        {% endfor %}
+        
     </body>
 <html>
 
