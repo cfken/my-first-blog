@@ -2,6 +2,7 @@
 <html>
     
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ken's blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -16,12 +17,13 @@
             <h1><a href="/">Ken's blog</a></h1>
         </div>      
 
-        <div class="content container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-xs-12 col-md-8">
+                <div class="col-xs-6 col-md-4">
                 {%block content %}
                 {% endblock %}
-               </div>
+                </div>
             </div>
         </div>
     </body>
